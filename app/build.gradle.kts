@@ -4,6 +4,9 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+apply(plugin = "androidx.navigation.safeargs.kotlin")
+apply(plugin = "org.jetbrains.kotlin.kapt")
+
 android {
     namespace = "br.com.helpcsistemas.app"
     compileSdk {
@@ -19,6 +22,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -42,6 +46,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -50,6 +55,23 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    implementation(libs.androidx.recyclerview.v140)
+    implementation(libs.androidx.navigation.fragment.ktx.v296)
+    implementation(libs.androidx.navigation.ui.ktx.v296)
+    implementation(libs.lifeCicleExtensions)
+    implementation(libs.kotlinx.coroutines.core.v1102)
+    implementation(libs.kotlinx.coroutines.android.v1102)
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    add("kapt", "androidx.room:room-compiler:2.6.1")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+
+    implementation("com.google.dagger:dagger:2.46.1")
+    implementation("com.google.dagger:dagger-android-support:2.46.1")
+    add("kapt", "com.google.dagger:dagger-compiler:2.46.1")
+    add("kapt", "com.google.dagger:dagger-android-processor:2.46.1")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

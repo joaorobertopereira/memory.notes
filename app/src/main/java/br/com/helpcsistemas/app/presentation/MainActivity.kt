@@ -1,4 +1,4 @@
-package br.com.helpcsistemas.app
+package br.com.helpcsistemas.app.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "MemoryNotes"
 include(":app")
+include(":core")
  
