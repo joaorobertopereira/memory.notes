@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MemoryNotes</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_notes">Add Notes</string>
+    <string name="standard_text">Title</string>
+    <string name="standard_content">Content</string>
 </resources>
