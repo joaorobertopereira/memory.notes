@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android.v1102)
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.material)
     add("kapt", "androidx.room:room-compiler:2.6.1")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
